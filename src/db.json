@@ -1,0 +1,69 @@
+{
+  "user": "John",
+  "cards": 
+    [
+      {
+        "id": 1,
+        "title": "mail chime, check new mail",
+        "steps": [
+          "At your office desk, when you hear the mail chime.",
+          "Take a sip of water from your water bottle.",
+          "Open your new mail.",
+          "Quickly scan your mail for 10 seconds, just enough to know what it is about.",
+          "Label your mail within its right category. Urgent, Next, Delegate or Avoid.",
+          "Comeback to the task you were doing."
+        ]
+      },
+      {
+        "id": 2,
+        "title": "open door, stand up right",
+        "steps": [
+          "During the day, anywhere in town.",
+          "When you open any kind of door.",
+          "Stand up right. Put your back straight and Put your shoulder back.",
+          "Take a deep breath and say to yourself : “I got this”.",
+          "Carry on to where you’re headed."
+        ]
+      },
+      {
+        "id": 3,
+        "title": "todo thought, write to mini agenda",
+        "steps": [
+          "During the day, while at the office.",
+          "When you think about an important task that should be done.",
+          "Take out your mini paper agenda from your jacket.",
+          "Pick an intuitive due date. Don’t think too much, your instinct knows best.",
+          "Write down the task. Use an action verb into your description.",
+          "Put your mini paper agenda back into your jacket.",
+          "Go back to what you were doing."
+        ]
+      },
+      {
+        "id": 4,
+        "title": "first office desk routine",
+        "steps": [
+          "In the morning, when you enter your office for the first time.",
+          "Open the windows.",
+          "Fill up your desk’s water bottle.",
+          "Take 5 minutes to write down everything you have in your mind about work, tasks and event in your mini paper agenda.",
+          "Review all events, tasks and meetings planned for today.",
+          "Put your mini paper agenda in your jacket's left pocket.",
+          "Fire up your PC and start working on your first planned task right away."
+        ]
+      },
+      {
+        "id": 5,
+        "title": "before meeting routine",
+        "steps": [
+          "In the office, before the start of a meeting, when waiting for other participant to arrive,",
+          "Open the windows.",
+          "Ready up your paper notebook and pencil on the table.",
+          "Write down any questions that come to your mind.",
+          "Prepare Fruits and water bottles for all participants.",
+          "Do 10 trunks extension.",
+          "Review your mini paper agenda.",
+          "If you still have time, review your daily mantra."
+        ]
+      }
+    ]
+}
