@@ -1,5 +1,5 @@
 import React from 'react';
-import { IonGrid, IonRow, IonCol, IonContent, IonPage, IonHeader, IonToolbar, IonTitle, isPlatform, IonList, IonItem, IonLabel, IonListHeader, IonCard, IonCardSubtitle, IonCardHeader, IonCardTitle, IonCardContent, IonButton, IonIcon } from '@ionic/react';
+import { IonGrid, IonRow, IonCol, IonContent, IonPage, IonHeader, IonToolbar, IonTitle, isPlatform, IonList, IonItem, IonLabel, IonListHeader, IonCard, IonCardSubtitle, IonCardHeader, IonCardTitle, IonCardContent, IonButton, IonIcon, IonSelect, IonSelectOption } from '@ionic/react';
 import { arrowDown, menu, close } from 'ionicons/icons';
 
 const EditorPanel: React.FC = () => (
@@ -13,13 +13,19 @@ const EditorPanel: React.FC = () => (
       <IonList>
         <IonListHeader><h5>Card Properties</h5></IonListHeader>
         <IonItem>
-          <IonLabel>Selected Card title: ...</IonLabel>
+          <IonLabel>Selected Card title: mail chime, check new mail</IonLabel>
         </IonItem>
         <IonItem>
           <IonLabel>Next practice interval : ...</IonLabel>
         </IonItem>
-        <IonItem>
-          <IonLabel>Stage:</IonLabel><IonIcon icon={arrowDown} style={{marginLeft: 'auto'}}/>
+        <IonItem className='dropdown-selector'>
+          <IonLabel>Stage:</IonLabel>
+          <IonSelect value="in-progress">
+            <IonSelectOption value="todo">To-Do</IonSelectOption>
+            <IonSelectOption value="in-progress">In progress</IonSelectOption>
+            <IonSelectOption value="done">Done</IonSelectOption>
+          </IonSelect>
+        <div style={{height: '20px'}}></div>
         </IonItem>
       </IonList>
     </IonRow>
@@ -29,47 +35,72 @@ const EditorPanel: React.FC = () => (
           <h5>Card Steps</h5>
         </IonListHeader>
         <IonItem>
-          <IonCard>
+          <IonCard style={{width: '100%'}}>
             <IonCardHeader>
                 <IonCardTitle style={{display: 'flex', maxHeight: '30px', alignItems: 'center'}}>
                   <IonIcon icon={menu} style={{marginRight: '15px'}}/>
-                  <p>Step 1 text</p>
+                  <p>Step 1</p>
                   <IonIcon icon={close} style={{marginLeft: 'auto'}}/>
                 </IonCardTitle>
               </IonCardHeader>
               <IonCardContent>
-                (Step 1 text...) Eg. Keep close to Nature's heart... and break clear away, once in awhile,
-                and climb a mountain or spend a week in the woods. Wash your spirit clean.
+                At your office desk, when you hear the mail chime.
               </IonCardContent>
           </IonCard> 
         </IonItem>
         <IonItem>
-          <IonCard>
+          <IonCard style={{width: '100%'}}>
             <IonCardHeader>
               <IonCardTitle style={{display: 'flex', maxHeight: '30px', alignItems: 'center'}}>
                 <IonIcon icon={menu} style={{marginRight: '15px'}}/>
-                <p>Step 2 text</p>
+                <p>Step 2</p>
                 <IonIcon icon={close} style={{marginLeft: 'auto'}}/>
               </IonCardTitle>
             </IonCardHeader>
             <IonCardContent>
-              (Step 1 text...) Eg. Keep close to Nature's heart... and break clear away, once in awhile,
-              and climb a mountain or spend a week in the woods. Wash your spirit clean.
+              Take a sip of water from your water bottle.
             </IonCardContent>
           </IonCard> 
         </IonItem>
         <IonItem>
-          <IonCard>
+          <IonCard style={{width: '100%'}}>
             <IonCardHeader>
               <IonCardTitle style={{display: 'flex', maxHeight: '30px', alignItems: 'center'}}>
                 <IonIcon icon={menu} style={{marginRight: '15px'}}/>
-                <p>Step 3 text</p>
+                <p>Step 3</p>
                 <IonIcon icon={close} style={{marginLeft: 'auto'}}/>
               </IonCardTitle>
             </IonCardHeader>
             <IonCardContent>
-              (Step 1 text...) Eg. Keep close to Nature's heart... and break clear away, once in awhile,
-              and climb a mountain or spend a week in the woods. Wash your spirit clean.
+              Open your new mail.
+            </IonCardContent>
+          </IonCard> 
+        </IonItem>
+        <IonItem>
+          <IonCard style={{width: '100%'}}>
+            <IonCardHeader>
+              <IonCardTitle style={{display: 'flex', maxHeight: '30px', alignItems: 'center'}}>
+                <IonIcon icon={menu} style={{marginRight: '15px'}}/>
+                <p>Step 4</p>
+                <IonIcon icon={close} style={{marginLeft: 'auto'}}/>
+              </IonCardTitle>
+            </IonCardHeader>
+            <IonCardContent>
+              Label your mail within its right category. Urgent, Next, Delegate or Avoid.
+            </IonCardContent>
+          </IonCard> 
+        </IonItem>
+        <IonItem>
+          <IonCard style={{width: '100%'}}>
+            <IonCardHeader>
+              <IonCardTitle style={{display: 'flex', maxHeight: '30px', alignItems: 'center'}}>
+                <IonIcon icon={menu} style={{marginRight: '15px'}}/>
+                <p>Step 5</p>
+                <IonIcon icon={close} style={{marginLeft: 'auto'}}/>
+              </IonCardTitle>
+            </IonCardHeader>
+            <IonCardContent>
+              Comeback to the task you were doing.
             </IonCardContent>
           </IonCard> 
         </IonItem>

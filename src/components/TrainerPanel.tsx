@@ -1,5 +1,5 @@
 import React from 'react';
-import { IonRow, IonList, IonItem, IonLabel, IonListHeader, IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonCardSubtitle, IonButton } from '@ionic/react';
+import { IonRow, IonList, IonItem, IonLabel, IonListHeader, IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonCardSubtitle, IonButton, IonToggle, IonSelectOption, IonSelect } from '@ionic/react';
 
 const TrainerPanel: React.FC = () => (
   <IonCard className='ion-card-section'>
@@ -34,16 +34,28 @@ const TrainerPanel: React.FC = () => (
           <h6 style={{color: "#a0a0a0"}}>Training session setup</h6>
         </IonItem>
         <IonItem>
-          <IonLabel>Text to speech audio [ON]</IonLabel>
+          <IonLabel>Text to speech audio</IonLabel>
+          <IonToggle slot='end' name='audio' color='success' checked />
         </IonItem>
         <IonItem>
-          <IonLabel>music audio : [ON]</IonLabel>
+          <IonLabel>Music audio</IonLabel>
+          <IonToggle slot='end' name='audio' color='success' checked />
+        </IonItem>
+        <IonItem className='dropdown-selector'>
+          <IonLabel>Music song:</IonLabel>
+          <IonSelect value="03">
+            <IonSelectOption value="01">Alice in Chains</IonSelectOption>
+            <IonSelectOption value="02">Green Day</IonSelectOption>
+            <IonSelectOption value="03">Nirvana</IonSelectOption>
+            <IonSelectOption value="04">Pearl Jam</IonSelectOption>
+            <IonSelectOption value="05">Smashing Pumpkins</IonSelectOption>
+            <IonSelectOption value="06">Soundgarden</IonSelectOption>
+            <IonSelectOption value="07">Stone Temple Pilots</IonSelectOption>
+          </IonSelect>
         </IonItem>
         <IonItem>
-          <IonLabel>(music song :) Song 1              [v]</IonLabel>
-        </IonItem>
-        <IonItem>
-          <IonLabel>Text to speech audio [ON]</IonLabel>
+          <IonLabel>Text to speech audio</IonLabel>
+          <IonToggle slot='end' name='audio' color='success' checked />
         </IonItem>
         <IonItem>
           <IonButton className="ion-button" color="primary" expand="block" size="default">re-start training</IonButton>

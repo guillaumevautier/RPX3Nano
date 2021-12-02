@@ -17,10 +17,10 @@ const BrowserPanel: React.FC = () => (
       <IonList>
         <IonListHeader><h5>Starting Card</h5></IonListHeader>
         <IonItem>
-          <IonLabel>Card 1 Title</IonLabel>
+          <IonLabel>mail chime, check new mail</IonLabel>
         </IonItem>
         <IonItem>
-          <IonLabel>Card 2 Title</IonLabel>
+          <IonLabel>open door, stand up right</IonLabel>
         </IonItem>
       </IonList>
     </IonRow>
@@ -28,10 +28,10 @@ const BrowserPanel: React.FC = () => (
       <IonList>
         <IonListHeader><h5>Ending Card</h5></IonListHeader>
         <IonItem>
-          <IonLabel>Card 3 Title</IonLabel>
+          <IonLabel>todo thought, write to mini agenda</IonLabel>
         </IonItem>
         <IonItem>
-          <IonLabel>Card 4 Title</IonLabel>
+          <IonLabel>first office desk routine</IonLabel>
         </IonItem>
       </IonList>
     </IonRow>
@@ -39,9 +39,9 @@ const BrowserPanel: React.FC = () => (
       <IonList>
         <IonListHeader><h5>Common Card</h5></IonListHeader>
         <IonItem>
-          <IonLabel>Card 1 Title</IonLabel>
+          <IonLabel>before meeting routine</IonLabel>
         </IonItem>
-        <IonItem>
+        {/* <IonItem>
           <IonLabel>Card 2 Title</IonLabel>
         </IonItem>
         <IonItem>
@@ -64,7 +64,7 @@ const BrowserPanel: React.FC = () => (
         </IonItem>
         <IonItem>
           <IonLabel>Card 9 Title</IonLabel>
-        </IonItem>
+        </IonItem> */}
       </IonList>
     </IonRow>
   </IonCard>
