@@ -20,10 +20,10 @@ const EditorPanel: React.FC = () => (
         </IonItem>
         <IonItem className='dropdown-selector'>
           <IonLabel>Stage:</IonLabel>
-          <IonSelect value="in-progress">
-            <IonSelectOption value="todo">To-Do</IonSelectOption>
-            <IonSelectOption value="in-progress">In progress</IonSelectOption>
-            <IonSelectOption value="done">Done</IonSelectOption>
+          <IonSelect value="starting">
+            <IonSelectOption value="starting">Starting</IonSelectOption>
+            <IonSelectOption value="ending">Ending</IonSelectOption>
+            <IonSelectOption value="common">Common</IonSelectOption>
           </IonSelect>
         <div style={{height: '20px'}}></div>
         </IonItem>

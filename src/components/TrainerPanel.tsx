@@ -34,6 +34,9 @@ const TrainerPanel: React.FC = () => (
           <h6 style={{color: "#a0a0a0"}}>Training session setup</h6>
         </IonItem>
         <IonItem>
+          <IonLabel>Card  count to practice : .. 4</IonLabel>
+        </IonItem>
+        <IonItem>
           <IonLabel>Text to speech audio</IonLabel>
           <IonToggle slot='end' name='audio' color='success' checked />
         </IonItem>
@@ -52,10 +55,6 @@ const TrainerPanel: React.FC = () => (
             <IonSelectOption value="06">Soundgarden</IonSelectOption>
             <IonSelectOption value="07">Stone Temple Pilots</IonSelectOption>
           </IonSelect>
-        </IonItem>
-        <IonItem>
-          <IonLabel>Text to speech audio</IonLabel>
-          <IonToggle slot='end' name='audio' color='success' checked />
         </IonItem>
         <IonItem>
           <IonButton className="ion-button" color="primary" expand="block" size="default">re-start training</IonButton>
