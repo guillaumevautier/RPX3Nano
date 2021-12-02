@@ -1,0 +1,7 @@
+{
+  "name": "RPX3Nano",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
