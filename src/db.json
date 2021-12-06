@@ -64,6 +64,15 @@
           "Review your mini paper agenda.",
           "If you still have time, review your daily mantra."
         ]
+      },
+      {
+        "id": 6,
+        "title": "test card",
+        "steps": [
+          "step 1",
+          "step 2",
+          "step 3"
+        ]
       }
     ]
 }
